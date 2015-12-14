@@ -1,8 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
+@font-face {
+    font-family: Geometos;
+    src: url(assets/fonts/geometos.ttf);
+}
 
 body {
-	font: 300 14px/1.8 'Raleway', sans-serif;
+	font: 300 14px/1.8 'Proxima Nova', sans-serif;
 	color: #666;
 	overflow-x: hidden;
 }
@@ -13,7 +17,7 @@ img {
 }
 
 a {
-	color: #E7746F;
+	color: #3498db;
 }
 
 a:hover {
@@ -62,7 +66,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Raleway, sans-serif;
+	font: 700 40px/1.2 'Geometos', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -116,59 +120,11 @@ h6 {
 
 
 /* ---------------------------------------------- /*
- * Input-group
-/* ---------------------------------------------- */
-
-.input-group .form-control {
-	z-index: auto;
-}
-
-.input-group-addon {
-	background: #D8E1E4;
-	border: 2px solid #D8E1E4;
-	padding: 6px 15px;
-	font-weight: 700;
-}
-
-/* ---------------------------------------------- /*
- * Inputs styles
-/* ---------------------------------------------- */
-
-.form-control {
-	background: #FFF;
-	border: 1px solid #D8E1E4;
-	font-size: 12px;
-	padding: 0 15px;
-}
-
-.form-control:focus{
-    border-color: rgba(135, 135, 135, 0.7);
-}
-
-.input-lg,
-.form-horizontal .form-group-lg .form-control {
-	height: 38px;
-	font-size: 13px;
-}
-
-.input-sm,
-.form-horizontal .form-group-sm .form-control {
-	font-size: 11px;
-	height: 30px;
-}
-
-textarea.form-control {
-	padding: 15px;
-    max-width: 100%;
-    min-width: 100%;
-}
-
-/* ---------------------------------------------- /*
  * Custom button style
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: Raleway, sans-serif;
+	font-family: 'Proxima Nova', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
@@ -224,14 +180,19 @@ textarea.form-control {
 
 .pfblock {
 	padding: 120px 0 100px;
+    background-color: #3498db;
 }
 
 .pfblock-gray {
 	background: #f5f5f5;
+    background-image: url(../images/background.png)
 }
 
 .pfblock-image {
 	padding: 0;
+}
+.pfblock-black{
+    background-color: whitesmoke;
 }
 
 .calltoaction h1,
@@ -269,7 +230,7 @@ textarea.form-control {
 }
 
 .pfblock-subtitle {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-family: 'Proxima Nova', sans-serif;
 	font-style: normal;
 	font-size: 18px;
     letter-spacing: 2px;
@@ -289,8 +250,8 @@ textarea.form-control {
     text-align: center;
 }
 .calltoaction {
-    background: url(../images/item-3.jpg);
-	background-color: #222;
+    background: url(../images/cover1.jpg);
+	background-color: #3498db;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	-webkit-background-size: cover;
@@ -337,7 +298,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover.jpg);
+	background: url(../images/cover2.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -347,18 +308,6 @@ textarea.form-control {
 		 -o-background-size: cover;
 			background-size: cover;
 	padding: 0;
-}
-
-.home-overlay {
-    background-color: rgba(44, 62, 80, 0.3);
-    background-image: url("../images/pattern.png");
-    background-repeat: repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
 }
 
 .intro {
@@ -372,7 +321,7 @@ textarea.form-control {
 		-ms-transform: translate(0%, -50%);
 		 -o-transform: translate(0%, -50%);
 			transform: translate(0%, -50%);
-	padding: 0 15px;
+	padding: 0px;
 }
 
 .intro h1{
@@ -380,15 +329,17 @@ textarea.form-control {
 }
 
 .start {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
-	font-size: 16px;
+	font-family: "Geometos", sans-serif;
+	font-size: 25px;
 	font-style: normal;
 	text-transform: none;
 	margin: 15px 0;
+    letter-spacing: 2px;
+    color: black;
 }
 
 /* ---------------------------------------------- /*
- * Servise
+ * FAQ
 /* ---------------------------------------------- */
 
 .iconbox {
@@ -401,7 +352,7 @@ textarea.form-control {
 
 .iconbox-icon {
 	margin: 0 0 15px;
-	font-size: 32px;
+	font-size: 20px;
 	color: #222;
 }
 
@@ -410,42 +361,60 @@ textarea.form-control {
 	padding: 0;
 }
 
-/* ---------------------------------------------- /*
- * Skills
-/* ---------------------------------------------- */
 
-.chart {
-    display: inline-block;
-    height: 140px;
-    margin: 50px 0;
-    position: relative;
-    text-align: center;
-    width: 140px;
+/* sponsor */
+
+#sponsors-container {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
 }
-.chart canvas {
-    left: 0;
-    position: absolute;
-    top: 0;
-}
-.percent {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 140px;
-    z-index: 2;
-}
-.percent:after {
-    content: "%";
-    font-size: 50%;
-    margin-left: 0.1em;
+.sponsor {
+  height: 35px;
+  margin: 25px 15px;
+  opacity: 0.6;
 }
 
-/* ---------------------------------------------- /*
- * Contact
-/* ---------------------------------------------- */
+.sponsor.title {
+  height: 50px;
+  display: block;
+  margin: 25px auto 35px auto;
+}
 
-.ajax-response {
-	text-align: center;
+.sponsor-too-big {
+  height: 22px;
+}
+
+.sponsor-too-small {
+  height: 40px;
+}
+
+.partner {
+  height: 35px;
+  margin: 25px 15px;
+  opacity: 0.6;
+  margin-top: 20px
+}
+
+.partner.title {
+  height: 100px;
+  display: block;
+  margin: 15px auto 20px auto
+}
+
+.partner:hover {
+  opacity: 1;
+  -webkit-filter: none;
+}
+
+.sponsor:hover {
+  opacity: 1;
+  -webkit-filter: none;
+}
+
+#sponsors-container h1 {
+  margin-bottom: 40px
 }
 
 /* ---------------------------------------------- /*
@@ -453,7 +422,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #footer {
-	background: #222;
+	background: #3498db;
 	text-align: center;
 	padding: 40px 0;
 	color: #FFF;
@@ -495,7 +464,7 @@ textarea.form-control {
 	   -moz-border-radius: 3px;
 			border-radius: 3px;
 	font-size: 14px;
-	color: rgba(255, 255, 255, .2);
+	color: white;
 }
 
 .social-links a:hover {
@@ -519,7 +488,7 @@ textarea.form-control {
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: Raleway, sans-serif;
+	font-family: 'Geometos', sans-serif;
 }
 
 .navbar-custom,
@@ -542,18 +511,18 @@ textarea.form-control {
 .navbar-custom .navbar-nav > li.active a {
 	background: none;
 	outline: 0;
-	color: #E7746F;
+	color: #3498db;
 }
 
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 22px;
-    font-family: Raleway, cursive;
+    font-family: 'Geometos', cursive;
 }
 
 .navbar-custom .dropdown-menu {
 	border: 0;
-	border-top: 2px solid #E7746F;
+	border-top: 2px solid #3498db;
 	border-radius: 0;
 }
 
@@ -597,7 +566,7 @@ textarea.form-control {
 .scroll-up a:hover,
 .scroll-up a:active {
 	background-color: rgba(235, 235, 235, .8);
-	color: #e7746f;
+	color: #3498db;
 }
 
 /* ---------------------------------------------- /*
@@ -608,8 +577,6 @@ textarea.form-control {
 	position: absolute;
 	left: 50%;
 	bottom: 40px;
-	border: 2px solid #fff;
-	border-radius: 50%;
 	height: 50px;
 	width: 50px;
 	margin-left: -15px;
@@ -620,9 +587,9 @@ textarea.form-control {
 
 .scroll-down span{
     position: relative;
-    color: #fff;
+    color: black;
     -webkit-animation-name: drop;
-	-webkit-animation-duration: 1s;
+	-webkit-animation-duration: 10s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-delay: 0s;
 	-webkit-animation-iteration-count: infinite;
@@ -916,7 +883,7 @@ figure.effect-bubba:hover p {
 
 .cbp-qtprogress {
 	position: absolute;
-	background: #FF5252;
+	background: #3498db;
 	height: 1px;
 	width: 0%;
 	top: 0;
@@ -931,7 +898,7 @@ figure.effect-bubba:hover p {
 }
 
 .cbp-qtrotator blockquote p {
-	font-size: 2em;
+	font-size: 1.3em;
 	color: #888;
 	font-weight: 300;
 	margin: 0.4em 0 1em;
