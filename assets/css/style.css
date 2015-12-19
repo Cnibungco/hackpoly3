@@ -145,13 +145,13 @@ h6 {
 .btn-group-lg > .btn {
 	padding: 10px 25px;
 	font-size: 13px;
-    background: rgba(17, 17, 17, 0.8);
-    color: #fff;
+    background: rgba(255, 255, 255, .8);
+    color: black;
 }
 .btn-lg:hover,
 .btn-group-lg > .btn:hover{
-    background: rgba(17, 17, 17, 1.8);
-    color: #fff;
+    background: rgba(255, 255, 255, .8);
+    color: black;
 }
 
 .btn-sm,
@@ -278,10 +278,19 @@ h6 {
 .calltoaction-btn {
 	text-align: center;
 }
+.btn-container{
+ text-align: center;   
+}
+.calltoaction-btn-top{
+    display: inline-block;
+}
+.calltoaction-btn-top{
+ text-decoration: none;
+}
 
 .calltoaction-btn > .btn {
     background: rgba(255, 255, 255, .8);
-    color: #111;
+    color: black;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
@@ -299,7 +308,7 @@ h6 {
 
 #home {
 	background: url(../images/cover2.jpg);
-	background-color: #222;
+	background-color: rgba(255, 255, 255, .8);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -330,13 +339,35 @@ h6 {
 
 .start {
 	font-family: "Geometos", sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	font-style: normal;
 	text-transform: none;
-	margin: 15px 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: black;
 }
+.home-btn {
+	text-align: center;
+}
+.btn-container{
+ text-align: center;   
+}
+.home-btn-top{
+    display: inline-block;
+}
+.home-btn-top{
+ text-decoration: none;
+}
+
+.home-btn > .btn {
+    background: rgba(255, 255, 255, .8);
+    color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.home-btn > .btn:hover{
+    background: #fff;
+}
+
 
 /* ---------------------------------------------- /*
  * FAQ
@@ -383,11 +414,17 @@ h6 {
 }
 
 .sponsor-too-big {
-  height: 22px;
+  height: 50px;
 }
 
 .sponsor-too-small {
-  height: 40px;
+  height: 120px;
+}
+.sponsor-ticket{
+height: 200px;   
+}
+.sponsor-kpcb{
+    height: 80px;   
 }
 
 .partner {
