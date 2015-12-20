@@ -144,6 +144,7 @@ h6 {
 .btn-lg,
 .btn-group-lg > .btn {
 	padding: 10px 25px;
+    margin-top: 40px;
 	font-size: 13px;
     background: rgba(255, 255, 255, .8);
     color: black;
