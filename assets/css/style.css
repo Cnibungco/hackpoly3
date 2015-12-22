@@ -1,10 +1,20 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
 @font-face {
     font-family: Geometos;
-    src: url(assets/fonts/geometos.ttf);
+    src: url(assets/fonts/Geometos.ttf);
 }
-
+@font-face {
+  font-family: 'bebas';
+  src: url("/assets/fonts/BebasKai-Regular.otf")format("opentype");
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/assets/fonts/ProximaNova-Regular.otf")format("opentype");
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 body {
 	font: 300 14px/1.8 'Proxima Nova', sans-serif;
 	color: #666;
@@ -66,7 +76,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 'Geometos', sans-serif;
+	font: 700 40px/1.2 'geometos', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -144,14 +154,15 @@ h6 {
 .btn-lg,
 .btn-group-lg > .btn {
 	padding: 10px 25px;
-    margin-top: 40px;
+    margin-top: 10px;
 	font-size: 13px;
     background: rgba(255, 255, 255, .8);
     color: black;
+    font-family: 'Proxima Nova', sans-serif;
 }
 .btn-lg:hover,
 .btn-group-lg > .btn:hover{
-    background: rgba(255, 255, 255, .8);
+    background: white;
     color: black;
 }
 
@@ -339,8 +350,9 @@ h6 {
 }
 
 .start {
-	font-family: "Geometos", sans-serif;
-	font-size: 20px;
+	font-family: 'bebas', sans-serif;
+	font-size: 50px;
+    letter-spacing: 2px;
 	font-style: normal;
 	text-transform: none;
     letter-spacing: 1px;
@@ -362,7 +374,6 @@ h6 {
 .home-btn > .btn {
     background: rgba(255, 255, 255, .8);
     color: black;
-	margin-top: 5px;
 	margin-bottom: 5px;
 }
 .home-btn > .btn:hover{
@@ -418,14 +429,20 @@ h6 {
   height: 50px;
 }
 
-.sponsor-too-small {
-  height: 120px;
+.sponsor-blue {
+  height: 50px;
+    width: 150px;
+}
+.sponsor-ng{
+   height: 30px;
+    width: 210px;
 }
 .sponsor-ticket{
-height: 200px;   
+    height: 40px;
+    width: 200px;
 }
 .sponsor-kpcb{
-    height: 80px;   
+    height: 40px;   
 }
 
 .partner {
@@ -464,6 +481,14 @@ height: 200px;
 	text-align: center;
 	padding: 40px 0;
 	color: #FFF;
+}
+#footer a {
+    text-decoration: none;
+    color: white;
+}
+#footer a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .copyright {
@@ -526,7 +551,8 @@ height: 200px;
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: 'Geometos', sans-serif;
+	font-family: 'Bebas', sans-serif;
+    font-size: 40px;
 }
 
 .navbar-custom,
@@ -538,7 +564,7 @@ height: 200px;
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
-	font-size: 11px;
+	font-size: 20px;
 	letter-spacing: 3px;
 	color: #222;
 }
@@ -553,9 +579,9 @@ height: 200px;
 }
 
 .navbar-custom .navbar-brand {
-	font-weight: 700;
-	font-size: 22px;
-    font-family: 'Geometos', cursive;
+	font-weight: 1000;
+	font-size: 30px;
+    font-family: 'Bebas', sans-serif;
 }
 
 .navbar-custom .dropdown-menu {
