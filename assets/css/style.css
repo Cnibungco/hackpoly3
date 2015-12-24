@@ -1,23 +1,10 @@
 @font-face {
-    font-family: 'Geometos';
-    src: url(assets/fonts/Geometos.ttf);
-}
-@font-face {
-    font-family: 'Futura';
-    src: url(assets/fonts/FuturaHeavy.ttf);
-}
-@font-face {
   font-family: 'Gotham Book';
-  src: url("/assets/fonts/GothamBook.ttf")format("truetype");
+  src: url("/assets/fonts/Gotham-Book.ttf")format("truetype");
 }
 @font-face {
   font-family: 'Proxima Nova';
   src: url("/assets/fonts/ProximaNova-Regular.otf")format("opentype");
-}
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 body {
 	font: 300 14px/1.8 'Proxima Nova', sans-serif;
@@ -440,7 +427,7 @@ h6 {
   height: 50px;
 }
 .sponsor-ea{
-    height: 100px;
+    height: 200px;
 }
 
 .sponsor-guide{
@@ -448,8 +435,12 @@ h6 {
 }
 
 .sponsor-blue {
-  height: 50px;
+  height: 70px;
   width: 150px;
+}
+.sponsor-beam {
+  height: 70px;
+  width: 180px;
 }
 .sponsor-ng{
     height: 90px;
@@ -457,6 +448,7 @@ h6 {
 }
 .sponsor-ticket{
     height: 50px;
+    margin-bottom: 80px;
 }
 .sponsor-kpcb{
     height: 50px;
@@ -471,11 +463,12 @@ h6 {
 .partner-ieee{
     height: 60px;
 }
-
-.partner.title {
-  height: 100px;
+.partner-big{
+    height: 90px;
+}
+.ptitle {
   display: block;
-  margin: 15px auto 20px auto
+  margin-top:50px;
 }
 
 .partner:hover {
@@ -488,8 +481,8 @@ h6 {
   -webkit-filter: none;
 }
 
-#sponsors-container h1 {
-  margin-bottom: 40px
+#sponsors-container h3 {
+  margin-bottom: 40px;
 }
 
 /* ---------------------------------------------- /*
