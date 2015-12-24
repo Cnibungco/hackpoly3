@@ -3,10 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Hackpoly">
+	<meta name="description" content="Hackpoly is an annual 24-hour intercollegiate hackathon. This february 6-7, student hackers from across the nation will converge at Cal Poly Pomona to create incredible software and hardware projects.">
 	<meta name="author" content="Camille Nibungco | Poly Founders">
 
 	<title>Hackpoly : Feb 6-7 @ Cal Poly Pomona</title>
+
+    <!-- Twitter Meta -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="@hackpoly">
+    <meta property="twitter:title" content="Hackpoly : Feb 6-7 @ Cal Poly Pomona">
+    <meta property="twitter:description" content="Hackpoly is an annual 24-hour intercollegiate hackathon. This february 6-7, student hackers from across the nation will converge at Cal Poly Pomona to create incredible software and hardware projects.">
+    <meta property="twitter:image" content="/assets/images/icon.png">
+    <meta property="twitter:url" content="http://www.hackpoly.com/">
+
+    <!-- Facebook Meta -->
+    <meta property="fb:app_id" content="779321178880961">
+    <meta property="og:title" content="Hackpoly : Feb 6-7 @ Cal Poly Pomona">
+    <meta property="og:description" content="Hackpoly is an annual 24-hour intercollegiate hackathon. This february 6-7, student hackers from across the nation will converge at Cal Poly Pomona to create incredible software and hardware projects.">
+    <meta property="og:url" content="http://www.hackpoly.com/">
+    <meta property="og:image" content="/assets/images/icon.png">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
 
 	<!-- CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -440,8 +459,9 @@
 					</ul>
 
 					<p class="heart">
-                        Made with <span class="fa fa-heart fa-2x animated pulse"></span> by <a href="http://cnibungco.github.io">Camille Nibungco</a>
+                        Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Pomona.
                     </p>
+                    <p>Developed by: <a href="http://cnibungco.github.io">Camille Nibungco</a></p>
                     <p class="copyright">
                         © 2016 Hackpoly
 					</p>
@@ -487,4 +507,21 @@
   ga('create', 'UA-71628816-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '779321178880961',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 </script>
