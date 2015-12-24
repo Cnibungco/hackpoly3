@@ -1,10 +1,14 @@
 @font-face {
-    font-family: Geometos;
+    font-family: 'Geometos';
     src: url(assets/fonts/Geometos.ttf);
 }
 @font-face {
-  font-family: 'bebas';
-  src: url("/assets/fonts/BebasKai-Regular.otf")format("opentype");
+    font-family: 'Futura';
+    src: url(assets/fonts/FuturaHeavy.ttf);
+}
+@font-face {
+  font-family: 'Gotham Book';
+  src: url("/assets/fonts/GothamBook.ttf")format("truetype");
 }
 @font-face {
   font-family: 'Proxima Nova';
@@ -76,7 +80,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 'geometos', sans-serif;
+	font-family:'Gotham Book', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -246,6 +250,13 @@ h6 {
 	font-style: normal;
 	font-size: 18px;
     letter-spacing: 2px;
+    text-align: center;
+}
+.pfblock-sponsor {
+	font-family: 'Proxima Nova', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+    letter-spacing: 2px;
 }
 
 .pfblock-line {
@@ -350,8 +361,8 @@ h6 {
 }
 
 .start {
-	font-family: 'bebas', sans-serif;
-	font-size: 50px;
+	font-family: 'Gotham Book', sans-serif;
+	font-size: 30px;
     letter-spacing: 2px;
 	font-style: normal;
 	text-transform: none;
@@ -428,21 +439,27 @@ h6 {
 .sponsor-too-big {
   height: 50px;
 }
+.sponsor-ea{
+    height: 100px;
+}
+
+.sponsor-guide{
+ height: 40px;   
+}
 
 .sponsor-blue {
   height: 50px;
-    width: 150px;
+  width: 150px;
 }
 .sponsor-ng{
-   height: 30px;
-    width: 210px;
+    height: 90px;
+    width: 400px;
 }
 .sponsor-ticket{
-    height: 40px;
-    width: 200px;
+    height: 50px;
 }
 .sponsor-kpcb{
-    height: 40px;   
+    height: 50px;
 }
 
 .partner {
@@ -450,6 +467,9 @@ h6 {
   margin: 25px 15px;
   opacity: 0.6;
   margin-top: 20px
+}
+.partner-ieee{
+    height: 60px;
 }
 
 .partner.title {
@@ -551,7 +571,7 @@ h6 {
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: 'Bebas', sans-serif;
+	font-family: 'Gotham Book', sans-serif;
     font-size: 40px;
 }
 
@@ -564,7 +584,7 @@ h6 {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
-	font-size: 20px;
+	font-size: 12px;
 	letter-spacing: 3px;
 	color: #222;
 }
@@ -580,8 +600,8 @@ h6 {
 
 .navbar-custom .navbar-brand {
 	font-weight: 1000;
-	font-size: 30px;
-    font-family: 'Bebas', sans-serif;
+	font-size: 18px;
+    font-family: 'Gotham Book', sans-serif;
 }
 
 .navbar-custom .dropdown-menu {
