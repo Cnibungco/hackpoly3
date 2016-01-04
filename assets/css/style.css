@@ -426,10 +426,18 @@ h6 {
 .sponsor-too-big {
   height: 50px;
 }
-.sponsor-ea{
-    height: 200px;
+.sponsor-too-small {
+  height: 100px;
 }
-
+.sponsor-smaller{
+   height: 30px; 
+}
+.sponsor-esri{
+    height: 70px;
+}
+.sponsor-ea{
+    height: 100px;
+}
 .sponsor-guide{
  height: 40px;   
 }
@@ -452,6 +460,7 @@ h6 {
 }
 .sponsor-kpcb{
     height: 50px;
+    margin-bottom: 80px;
 }
 
 .partner {
@@ -461,7 +470,7 @@ h6 {
   margin-top: 20px
 }
 .partner-ieee{
-    height: 60px;
+    height: 70px;
 }
 .partner-big{
     height: 90px;
