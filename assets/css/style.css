@@ -432,23 +432,15 @@ h6 {
 .sponsor-smaller{
    height: 30px; 
 }
-.sponsor-esri{
-    height: 70px;
-}
-.sponsor-ea{
-    height: 100px;
-}
 .sponsor-guide{
  height: 40px;   
 }
-
 .sponsor-blue {
   height: 70px;
-  width: 150px;
 }
 .sponsor-beam {
-  height: 70px;
-  width: 180px;
+  height: 80px;
+  width: 200px;
 }
 .sponsor-ng{
     height: 90px;
